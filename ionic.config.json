@@ -1,0 +1,7 @@
+{
+  "name": "dentalRegisIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
