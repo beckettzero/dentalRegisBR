@@ -25,3 +25,20 @@
 #container a {
   text-decoration: none;
 }
+
+
+#login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ion-card {
+  width: 90%;
+  max-width: 400px;
+}
+
+ion-button {
+  margin-top: 16px;
+}
