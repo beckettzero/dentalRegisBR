@@ -5,7 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-     "start": "serve -s www",
+     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -31,7 +31,10 @@
     "rxjs": "~7.8.0",
     "serve": "^14.2.3",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.14.2",
+        "@ionic/app-scripts": "2.1.4",
+    "typescript": "~5.4.0"
+
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.0.0",
