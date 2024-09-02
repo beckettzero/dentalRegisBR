@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Inicio de Sesión
-    </ion-title>
+    <ion-title>Inicio de Sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,20 +17,19 @@
         <ion-card-title>Bienvenido</ion-card-title>
       </ion-card-header>
 
-      <ion-content>
-        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+      <ion-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <ion-item>
             <ion-label>Username</ion-label>
-            <ion-input type="text" name="username" ngModel required></ion-input>
+            <ion-input formControlName="username" type="text"></ion-input>
           </ion-item>
           <ion-item>
             <ion-label>Password</ion-label>
-            <ion-input type="password" name="password" ngModel required></ion-input>
+            <ion-input formControlName="password" type="password"></ion-input>
           </ion-item>
-          <ion-button type="submit">Login</ion-button>
+          <ion-button type="submit" [disabled]="!loginForm.valid">Login</ion-button>
         </form>
-        
-      </ion-content>
+      </ion-card-content>
     </ion-card>
   </div>
 </ion-content>

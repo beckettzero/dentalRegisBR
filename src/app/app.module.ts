@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { HomePage } from './home/home.page'; // Asegúrate de importar cualquier otro componente necesario
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
   ],
   imports: [
+    HttpClientModule ,
     BrowserModule,
     ReactiveFormsModule ,
     FormsModule,
