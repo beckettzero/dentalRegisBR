@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service'; // Asegúrate de que la ruta sea correcta
 import { CommonModule } from '@angular/common';
-import { AlertController, IonicModule, NavController, Platform } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -13,19 +13,35 @@ import { AlertController, IonicModule, NavController, Platform } from '@ionic/an
   imports: [CommonModule, ReactiveFormsModule, IonicModule]
 })
 export class HomePage {
+  loginForm: FormGroup;
 
   constructor(
-    public navCtrl: NavController,
-    private alertCtrl: AlertController,
-    private platform: Platform
-  ) {}
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {
+    this.loginForm = this.fb.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required]
+    });
+  }
 
-  showPlatform() {
-    let text = 'I run on: ' + this.platform.platforms();
-    this.alertCtrl.create({
-      header: 'My Home',
-      subHeader: text,
-      buttons: ['Ok']
-    }).then(alert => alert.present());
+  onSubmit() {
+    if (this.loginForm.valid) {
+      const formData = this.loginForm.value;
+      
+      this.authService.login(formData).subscribe(
+        (response: any) => {
+          if (response.status === 'success') {
+            this.router.navigate(['/next-component']); // Redirige al siguiente componente
+          } else {
+            alert('Credenciales incorrectas');
+          }
+        },
+        (error: any) => {
+          console.error('Error:', error);
+        }
+      );
+    }
   }
 }
