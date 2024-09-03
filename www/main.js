@@ -58,7 +58,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const routes = [{
   path: 'home',
-  loadComponent: () => __webpack_require__.e(/*! import() */ "src_app_home_home_page_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.page */ 1624)).then(m => m.HomePage)
+  loadComponent: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ionic_angular_fesm2022_ionic-angular_mjs"), __webpack_require__.e("src_app_home_home_page_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.page */ 1624)).then(m => m.HomePage)
+}, {
+  path: 'menu1',
+  loadComponent: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ionic_angular_fesm2022_ionic-angular_mjs"), __webpack_require__.e("src_app_menu1_menu1_component_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./menu1/menu1.component */ 8404)).then(m => m.Menu1Component)
+}, {
+  path: 'registrar-pacientes',
+  loadComponent: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ionic_angular_fesm2022_ionic-angular_mjs"), __webpack_require__.e("src_app_registrar-paciente_registrar-paciente_component_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./registrar-paciente/registrar-paciente.component */ 88)).then(m => m.RegistrarPacienteComponent)
+}, {
+  path: 'administrar-pacientes',
+  loadComponent: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ionic_angular_fesm2022_ionic-angular_mjs"), __webpack_require__.e("src_app_administrar-pacientes_administrar-pacientes_component_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./administrar-pacientes/administrar-pacientes.component */ 6672)).then(m => m.AdministrarPacientesComponent)
 }, {
   path: '',
   redirectTo: 'home',

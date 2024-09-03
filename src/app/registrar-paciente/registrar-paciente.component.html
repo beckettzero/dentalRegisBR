@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrar Paciente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="patientForm" (ngSubmit)="submitPatient()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input formControlName="apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Fecha de Nacimiento</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" formControlName="fecha_nacimiento"></ion-datetime>
+    </ion-item>
+    <ion-button type="submit" expand="block" [disabled]="!patientForm.valid">Registrar</ion-button>
+  </form>
+</ion-content>

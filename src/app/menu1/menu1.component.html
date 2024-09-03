@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Menú Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ion-text-center">Menú Principal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="ion-text-center ion-margin-top">
+   <ion-button expand="block" color="primary" (click)="goToRegistrarPacientes()">
+  Registrar Paciente
+</ion-button>
+<ion-button expand="block" color="secondary" (click)="goToAdministrarPacientes()">
+  Administrar Pacientes
+</ion-button>
+
+  </div>
+</ion-content>
