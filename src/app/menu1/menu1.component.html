@@ -12,12 +12,92 @@
   </ion-header>
 
   <div class="ion-text-center ion-margin-top">
-   <ion-button expand="block" color="primary" (click)="goToRegistrarPacientes()">
-  Registrar Paciente
-</ion-button>
-<ion-button expand="block" color="secondary" (click)="goToAdministrarPacientes()">
-  Administrar Pacientes
-</ion-button>
-
+    <ion-button expand="block" color="primary" (click)="goToRegistrarPacientes()">
+      Registrar Paciente
+    </ion-button>
+    <ion-button expand="block" color="secondary" (click)="goToAdministrarPacientes()">
+      Administrar Pacientes
+    </ion-button>
   </div>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Color Selector</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+      <!-- Triángulos y óvalo central -->
+      <svg width="300" height="300">
+        <polygon points="0,0 150,150 0,300" [attr.fill]="colors['section1']" stroke="#000000" (click)="selectColor('section1')" />
+        <polygon points="300,0 150,150 0,0" [attr.fill]="colors['section2']" stroke="#000000" (click)="selectColor('section2')" />
+        <polygon points="300,0 150,150 300,300" [attr.fill]="colors['section3']" stroke="#000000" (click)="selectColor('section3')" />
+        <polygon points="0,300 150,150 300,300" [attr.fill]="colors['section4']" stroke="#000000" (click)="selectColor('section4')" />
+        <ellipse cx="150" cy="150" rx="75" ry="50" [attr.fill]="colors['center']" stroke="#000000" (click)="selectColor('center')" />
+      </svg>
+      
+      
+    </svg>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-button color="danger">Caries</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="primary">1 Diente Obturado</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="secondary">2 Ausente</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="tertiary">3 Fractura</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="warning">4 Resina</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="success">5 Amalgama</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="medium">6 Erosión</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="dark">7 Obturación</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-button color="light">8 Sellante</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="danger">9 Enfermedad Periodontal</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="primary">10 Mal posición dentaria</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="secondary">11 Exodoncia</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="tertiary">12 Corona</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="warning">13 Prótesis</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="success">14 Mancha Blanca</ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button color="medium">15 Otro</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+  </ion-content>
+
+
+  
 </ion-content>

@@ -74,7 +74,7 @@ export class HomePage implements OnInit {
 
     this.inactivityTimer = setTimeout(() => {
       this.logout();
-    }, 10000); // 10 segundos
+    }, 60000); // 10 segundos
   }
 
   logout() {
