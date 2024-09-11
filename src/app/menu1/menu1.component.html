@@ -1,103 +1,322 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title class="ion-text-center">Menú Principal</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+ 
+  <ion-menu side="end" contentId="main-content" menuId="main-menu" >
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Dental Regis</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+  <!-- Submenu for Novedades -->
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Novedades</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Novedades</div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>B.Anaya</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">B.Anaya</div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>Administrador</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Administrador</div>
+    </ion-accordion>
+  </ion-accordion-group>
+    </ion-content>
+  </ion-menu>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large" class="ion-text-center">Menú Principal</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div  id="main-content">
+    <ion-header>
+      <ion-toolbar>
+       
+        <ion-searchbar placeholder="Buscar pacientes por nombre, apellido, etc.">
 
-  <div class="ion-text-center ion-margin-top">
-    <ion-button expand="block" color="primary" (click)="goToRegistrarPacientes()">
-      Registrar Paciente
-    </ion-button>
-    <ion-button expand="block" color="secondary" (click)="goToAdministrarPacientes()">
-      Administrar Pacientes
-    </ion-button>
-  </div>
+          <img src="/assets/img/dental-logo.webp" alt="dentalink logo" style="width: 50px;">
+         
+        </ion-searchbar>
 
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Color Selector</ion-title>
-    </ion-toolbar>
-  </ion-header>
+        <ion-buttons slot="end">
+          <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+
+
+      <ion-toolbar>
+
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label>Menu</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content"><ion-button ><ion-icon name="calendar"></ion-icon>Agenda</ion-button> <ion-button><ion-icon name="person"></ion-icon>Pacientes</ion-button> <ion-button><ion-icon name="calculator"></ion-icon>Cajas</ion-button> <ion-button><ion-icon name="cart"></ion-icon>Recaudacion</ion-button> <ion-button><ion-icon name="clipboard"></ion-icon>Administracion</ion-button> <ion-button><ion-icon name="analytics"></ion-icon>Reportes</ion-button> <ion-button><ion-icon name="git-branch"></ion-icon>CRM</ion-button> </div>
+          </ion-accordion>
   
-  <ion-content>
-    <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-      <!-- Triángulos y óvalo central -->
-      <svg width="300" height="300">
-        <polygon points="0,0 150,150 0,300" [attr.fill]="colors['section1']" stroke="#000000" (click)="selectColor('section1')" />
-        <polygon points="300,0 150,150 0,0" [attr.fill]="colors['section2']" stroke="#000000" (click)="selectColor('section2')" />
-        <polygon points="300,0 150,150 300,300" [attr.fill]="colors['section3']" stroke="#000000" (click)="selectColor('section3')" />
-        <polygon points="0,300 150,150 300,300" [attr.fill]="colors['section4']" stroke="#000000" (click)="selectColor('section4')" />
-        <ellipse cx="150" cy="150" rx="75" ry="50" [attr.fill]="colors['center']" stroke="#000000" (click)="selectColor('center')" />
-      </svg>
-      
-      
+    
+        </ion-accordion-group>
+        
+
+      </ion-toolbar>
+
+
+    </ion-header>
+
+    <ion-card>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button>
+              <ion-icon name="home"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        
+          <ion-title>Agenda</ion-title>
+        
+          <!-- Para pantallas grandes -->
+          <ion-buttons slot="end" class="desktop-toolbar">
+            <ion-button>
+              <ion-icon name="list"></ion-icon>Diaria
+            </ion-button>
+            <div class="separador"></div>
+            <ion-button>
+              <ion-icon name="calendar"></ion-icon>Semanal
+            </ion-button>
+            <div class="separador"></div>
+            <ion-button>
+              <ion-icon name="person"></ion-icon>Diaria Global
+            </ion-button>
+            <div class="separador"></div>
+            <ion-button>
+              <ion-icon name="nuclear"></ion-icon>Reprogramación
+            </ion-button>
+            <div class="separador"></div>
+            <ion-button>
+              <ion-icon name="list"></ion-icon>Dar Cita
+            </ion-button>
+            <div class="separador"></div>
+            <ion-button>
+              <ion-icon name="calendar-number"></ion-icon>Fecha
+            </ion-button>
+            <div class="separador"></div>
+            <ion-button>
+              <ion-icon name="print"></ion-icon>Imprimir
+            </ion-button>
+            <div class="separador"></div>
+            <ion-button>
+              <ion-icon name="mail"></ion-icon>Correo
+            </ion-button>
+          </ion-buttons>
+        
+          <!-- Para pantallas pequeñas (acordeón) -->
+          <ion-accordion-group class="mobile-toolbar">
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label>Opciones</ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="list"></ion-icon>Diaria
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="calendar"></ion-icon>Semanal
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="person"></ion-icon>Diaria Global
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="nuclear"></ion-icon>Reprogramación
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="list"></ion-icon>Dar Cita
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="calendar-number"></ion-icon>Fecha
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="print"></ion-icon>Imprimir
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-button>
+                    <ion-icon name="mail"></ion-icon>Correo
+                  </ion-button>
+                </ion-item>
+              </ion-list>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-toolbar>
+
+
+        
+      </ion-header>
+
+    </ion-card>
+
+    <ion-card>
+      <ion-grid>
+        <ion-row>
+          <!-- Columna para el ion-datetime -->
+          <ion-col size="auto">
+            <ion-datetime locale="es-ES">
+              <span slot="time-label">Tiempo</span>
+            </ion-datetime>
+          </ion-col>
+    
+          <!-- Columna para la lista con ítems -->
+          <ion-col size="auto">
+            <ion-card>
+              <ion-card-content>
+                <ion-list>
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                    </ion-thumbnail>
+                    <ion-label>Item</ion-label>
+                  </ion-item>
+    
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                    </ion-thumbnail>
+                    <ion-label>Item</ion-label>
+                  </ion-item>
+    
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                    </ion-thumbnail>
+                    <ion-label>Item</ion-label>
+                  </ion-item>
+    
+                  <ion-item lines="none">
+                    <ion-thumbnail slot="start">
+                      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                    </ion-thumbnail>
+                    <ion-label>Item</ion-label>
+                  </ion-item>
+                </ion-list>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    
+
+    <ion-content class="ion-padding">
+     
+
+
+<div class="ion-text-center ion-margin-top">
+  <ion-button expand="block" color="primary" (click)="goToRegistrarPacientes()">
+    Registrar Paciente
+  </ion-button>
+  <ion-button expand="block" color="secondary" (click)="goToAdministrarPacientes()">
+    Administrar Pacientes
+  </ion-button>
+</div>
+
+
+<ion-content>
+  <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Triángulos y óvalo central -->
+    <svg width="300" height="300">
+      <polygon points="0,0 150,150 0,300" [attr.fill]="colors['section1']" stroke="#000000" (click)="selectColor('section1')" />
+      <polygon points="300,0 150,150 0,0" [attr.fill]="colors['section2']" stroke="#000000" (click)="selectColor('section2')" />
+      <polygon points="300,0 150,150 300,300" [attr.fill]="colors['section3']" stroke="#000000" (click)="selectColor('section3')" />
+      <polygon points="0,300 150,150 300,300" [attr.fill]="colors['section4']" stroke="#000000" (click)="selectColor('section4')" />
+      <ellipse cx="150" cy="150" rx="75" ry="50" [attr.fill]="colors['center']" stroke="#000000" (click)="selectColor('center')" />
     </svg>
+    
+    
+  </svg>
 
-    <ion-grid>
-      <ion-row>
-        <ion-col size="auto">
-          <ion-button color="danger">Caries</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="primary">1 Diente Obturado</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="secondary">2 Ausente</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="tertiary">3 Fractura</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="warning">4 Resina</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="success">5 Amalgama</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="medium">6 Erosión</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="dark">7 Obturación</ion-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="auto">
-          <ion-button color="light">8 Sellante</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="danger">9 Enfermedad Periodontal</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="primary">10 Mal posición dentaria</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="secondary">11 Exodoncia</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="tertiary">12 Corona</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="warning">13 Prótesis</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="success">14 Mancha Blanca</ion-button>
-        </ion-col>
-        <ion-col size="auto">
-          <ion-button color="medium">15 Otro</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="auto">
+        <ion-button color="danger">Caries</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="primary">1 Diente Obturado</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="secondary">2 Ausente</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="tertiary">3 Fractura</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="warning">4 Resina</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="success">5 Amalgama</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="medium">6 Erosión</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="dark">7 Obturación</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="auto">
+        <ion-button color="light">8 Sellante</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="danger">9 Enfermedad Periodontal</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="primary">10 Mal posición dentaria</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="secondary">11 Exodoncia</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="tertiary">12 Corona</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="warning">13 Prótesis</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="success">14 Mancha Blanca</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button color="medium">15 Otro</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 
-  </ion-content>
+</ion-content>
 
 
-  
+
+
+
+
+
+    </ion-content>
+ 
+   </div>
+ 
+
+
 </ion-content>

@@ -26,3 +26,126 @@
   background-color: #f2f2f2;
   border-radius: 5px;
 }
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.search-bar {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --background: #fff;
+  --border-radius: 20px;
+  width: 60%;
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.clinic-logo {
+  height: 40px;
+}
+
+ion-toolbar {
+  --background: #007bff; /* Blue background for both toolbars */
+}
+
+ion-buttons ion-button {
+  color: white; /* Make button text and icons white */
+}
+
+ion-button ion-icon {
+  margin-right: 5px;
+}
+
+.date-card {
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.date-info {
+  text-align: center;
+}
+
+.appointments-card {
+  background-color: white;
+}
+
+.search-bar {
+  --background: #f1f1f1;
+  --border-radius: 20px;
+  padding: 10px;
+}
+
+ion-badge {
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+
+.calendar {
+  background-image: url('/dentalRegisIonic/src/assets/calendar.svg');
+}
+
+ion-toolbar ion-slides {
+  display: none; /* No mostrar el carrusel por defecto */
+}
+
+@media (max-width: 768px) { /* Aplicar el carrusel en dispositivos pequeños */
+  ion-toolbar ion-slides {
+    display: block;
+  }
+  
+  ion-toolbar ion-buttons {
+    display: none; /* Ocultar los botones fuera del carrusel */
+  }
+}
+
+  .separador {
+    width: 1px;
+    height: 30px;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+
+  @media (max-width: 768px) {
+    /* Ajuste para pantallas pequeñas como móviles */
+    ion-buttons {
+      display: block;
+    }
+
+    ion-button {
+      width: 100%; /* Cada botón ocupará toda la fila */
+      margin-bottom: 10px;
+    }
+
+    .separador {
+      display: none; /* Ocultar los separadores en pantallas pequeñas */
+    }
+  }
+
+  .mobile-toolbar {
+    display: none;
+  }
+  
+  .desktop-toolbar {
+    display: flex;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .mobile-toolbar {
+      display: block;
+    }
+  
+    .desktop-toolbar {
+      display: none;
+    }
+  
+    .separador {
+      display: none;
+    }
+  }
+  

@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { IonicModule, ToastController } from '@ionic/angular';
+import { IonicModule, LoadingController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -19,11 +19,20 @@ export class HomePage implements OnInit {
   toastMessage: any;
   toastColor: any;
 
-  constructor(private fb: FormBuilder, private router: Router, private http: HttpClient) {
+  constructor(private fb: FormBuilder, private router: Router, private http: HttpClient,private loadingCtrl: LoadingController) {
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required],
     });
+  }
+
+  async showLoading() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Comprobando...',
+      duration: 3000,
+    });
+
+    loading.present();
   }
 
   ngOnInit() {

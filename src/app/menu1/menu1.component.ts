@@ -2,15 +2,19 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AlertController, IonicModule } from '@ionic/angular';
+import { AlertController, IonicModule, MenuController } from '@ionic/angular';
 import { IonButton, IonHeader, IonTitle, IonToolbar, IonContent } from "@ionic/angular/standalone";
+import { addIcons } from 'ionicons';
+import { analytics, calculator, calendar, calendarClear, calendarNumber, cart, clipboard, gitBranch, list, mail, nuclear, person,print  } from 'ionicons/icons';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-menu1',
   templateUrl: './menu1.component.html',
   styleUrls: ['./menu1.component.scss'],
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, IonicModule]
+  imports: [CommonModule, ReactiveFormsModule, IonicModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class Menu1Component  implements OnInit {
 
@@ -46,7 +50,21 @@ export class Menu1Component  implements OnInit {
   // Mapa para almacenar las selecciones de colores
   selectedColors: { [key: string]: string } = {};
 
-  constructor(private router: Router, private alertCtrl: AlertController) { }
+  constructor(private router: Router, private alertCtrl: AlertController, private menu: MenuController) {   
+    addIcons({ calendar,person, calculator, cart, clipboard, analytics, gitBranch,list,mail,print, nuclear, calendarNumber });
+  
+  }
+
+
+  
+  async openSubMenu(menuId: string) {
+    // Cerrar el menú principal si está abierto
+    await this.menu.close('main-menu');
+    
+    // Abrir el submenú especificado
+    await this.menu.enable(true, menuId);
+    await this.menu.open(menuId);
+  }
 
    // Método para seleccionar un color para una sección
    async selectColor(section: keyof typeof this.colors) {
