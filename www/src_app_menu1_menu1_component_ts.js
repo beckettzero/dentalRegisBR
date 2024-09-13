@@ -173,9 +173,9 @@ _Menu1Component.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__[
   selectors: [["app-menu1"]],
   standalone: true,
   features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵStandaloneFeature"]],
-  decls: 235,
-  vars: 5,
-  consts: [["side", "end", "contentId", "main-content", "menuId", "main-menu"], [1, "ion-padding"], ["value", "first"], ["slot", "header", "color", "light"], ["slot", "content", 1, "ion-padding"], ["value", "second"], ["value", "third"], ["id", "main-content"], ["placeholder", "Buscar pacientes por nombre, apellido, etc."], ["src", "/assets/img/dental-logo.webp", "alt", "dentalink logo", 2, "width", "50px"], ["slot", "end"], ["menu", "main-menu"], ["name", "calendar"], ["name", "person"], ["name", "calculator"], ["name", "cart"], ["name", "clipboard"], ["name", "analytics"], ["name", "git-branch"], ["slot", "start"], ["name", "home"], ["slot", "end", 1, "desktop-toolbar"], ["name", "list"], [1, "separador"], ["name", "nuclear"], ["name", "calendar-number"], ["name", "print"], ["name", "mail"], [1, "mobile-toolbar"], ["slot", "header"], ["slot", "content"], ["size", "auto"], ["locale", "es-ES"], ["slot", "time-label"], ["alt", "Silhouette of mountains", "src", "https://ionicframework.com/docs/img/demos/thumbnail.svg"], ["lines", "none"], [1, "ion-text-center", "ion-margin-top"], ["expand", "block", "color", "primary", 3, "click"], ["expand", "block", "color", "secondary", 3, "click"], ["width", "300", "height", "300", "viewBox", "0 0 300 300", "xmlns", "http://www.w3.org/2000/svg"], ["width", "300", "height", "300"], ["points", "0,0 150,150 0,300", "stroke", "#000000", 3, "click"], ["points", "300,0 150,150 0,0", "stroke", "#000000", 3, "click"], ["points", "300,0 150,150 300,300", "stroke", "#000000", 3, "click"], ["points", "0,300 150,150 300,300", "stroke", "#000000", 3, "click"], ["cx", "150", "cy", "150", "rx", "75", "ry", "50", "stroke", "#000000", 3, "click"], ["color", "danger"], ["color", "primary"], ["color", "secondary"], ["color", "tertiary"], ["color", "warning"], ["color", "success"], ["color", "medium"], ["color", "dark"], ["color", "light"]],
+  decls: 241,
+  vars: 6,
+  consts: [["side", "end", "contentId", "main-content", "menuId", "main-menu"], [1, "ion-padding"], ["value", "first"], ["slot", "header", "color", "light"], ["slot", "content", 1, "ion-padding"], ["value", "second"], ["value", "third"], ["id", "main-content"], ["placeholder", "Buscar pacientes por nombre, apellido, etc."], ["src", "/assets/img/dental-logo.webp", "alt", "dentalink logo", 2, "width", "50px"], ["slot", "end"], ["menu", "main-menu"], ["name", "calendar"], ["name", "person"], ["name", "calculator"], ["name", "cart"], ["name", "clipboard"], ["name", "analytics"], ["name", "git-branch"], ["slot", "start"], ["name", "home"], ["slot", "end", 1, "desktop-toolbar"], ["name", "list"], [1, "separador"], ["name", "nuclear"], ["name", "calendar-number"], ["name", "print"], ["name", "mail"], [1, "mobile-toolbar"], ["slot", "header"], ["slot", "content"], ["size", "auto"], ["locale", "es-ES"], ["slot", "time-label"], [3, "fixed"], [1, "ion-text-center", "ion-margin-top"], ["expand", "block", "color", "primary", 3, "click"], ["expand", "block", "color", "secondary", 3, "click"], ["width", "300", "height", "300", "viewBox", "0 0 300 300", "xmlns", "http://www.w3.org/2000/svg"], ["width", "300", "height", "300"], ["points", "0,0 150,150 0,300", "stroke", "#000000", 3, "click"], ["points", "300,0 150,150 0,0", "stroke", "#000000", 3, "click"], ["points", "300,0 150,150 300,300", "stroke", "#000000", 3, "click"], ["points", "0,300 150,150 300,300", "stroke", "#000000", 3, "click"], ["cx", "150", "cy", "150", "rx", "75", "ry", "50", "stroke", "#000000", 3, "click"], ["color", "danger"], ["color", "primary"], ["color", "secondary"], ["color", "tertiary"], ["color", "warning"], ["color", "success"], ["color", "medium"], ["color", "dark"], ["color", "light"]],
   template: function Menu1Component_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "ion-content")(1, "ion-menu", 0)(2, "ion-header")(3, "ion-toolbar")(4, "ion-title");
@@ -319,121 +319,134 @@ _Menu1Component.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__[
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](139, "ion-card")(140, "ion-grid")(141, "ion-row")(142, "ion-col", 31)(143, "ion-datetime", 32)(144, "span", 33);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](145, "Tiempo");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](146, "ion-col", 31)(147, "ion-card")(148, "ion-card-content")(149, "ion-list")(150, "ion-item")(151, "ion-thumbnail", 19);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](152, "img", 34);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](153, "ion-label");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](154, "Item");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](146, "ion-grid", 34)(147, "ion-row")(148, "ion-col");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](149, "Hora ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](150, "ion-row");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](151, "11-45 -> 12:!5");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](155, "ion-item")(156, "ion-thumbnail", 19);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](157, "img", 34);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](158, "ion-label");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](159, "Item");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](152, "ion-col");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](153, "Paciente ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](154, "ion-row");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](155, "John Beckett");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](160, "ion-item")(161, "ion-thumbnail", 19);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](162, "img", 34);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](163, "ion-label");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](164, "Item");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](156, "ion-col");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](157, "Telefono ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](158, "ion-row");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](159, "8881111263");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](165, "ion-item", 35)(166, "ion-thumbnail", 19);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](167, "img", 34);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](168, "ion-label");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](169, "Item");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](170, "ion-content", 1)(171, "div", 36)(172, "ion-button", 37);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_ion_button_click_172_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](160, "ion-col");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](161, "Celular ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](162, "ion-row");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](163, "4443027181");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](164, "ion-col");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](165, "Doctor ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](166, "ion-row");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](167, "Raymaken");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](168, "ion-col");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](169, "Estado de cita ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](170, "ion-row");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](171, "En espera");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](172, "ion-col");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](173, "Situacion ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](174, "ion-row");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](175, "Deudas");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](176, "ion-content", 1)(177, "div", 35)(178, "ion-button", 36);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_ion_button_click_178_listener() {
         return ctx.goToRegistrarPacientes();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](173, " Registrar Paciente ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](179, " Registrar Paciente ");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](174, "ion-button", 38);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_ion_button_click_174_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](180, "ion-button", 37);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_ion_button_click_180_listener() {
         return ctx.goToAdministrarPacientes();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](175, " Administrar Pacientes ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](181, " Administrar Pacientes ");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](176, "ion-content");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](182, "ion-content");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceSVG"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](177, "svg", 39)(178, "svg", 40)(179, "polygon", 41);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_179_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](183, "svg", 38)(184, "svg", 39)(185, "polygon", 40);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_185_listener() {
         return ctx.selectColor("section1");
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](180, "polygon", 42);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_180_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](186, "polygon", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_186_listener() {
         return ctx.selectColor("section2");
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](181, "polygon", 43);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_181_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](187, "polygon", 42);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_187_listener() {
         return ctx.selectColor("section3");
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](182, "polygon", 44);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_182_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](188, "polygon", 43);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_polygon_click_188_listener() {
         return ctx.selectColor("section4");
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](183, "ellipse", 45);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_ellipse_click_183_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](189, "ellipse", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function Menu1Component_Template_ellipse_click_189_listener() {
         return ctx.selectColor("center");
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceHTML"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](184, "ion-grid")(185, "ion-row")(186, "ion-col", 31)(187, "ion-button", 46);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](188, "Caries");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](190, "ion-grid")(191, "ion-row")(192, "ion-col", 31)(193, "ion-button", 45);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](194, "Caries");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](189, "ion-col", 31)(190, "ion-button", 47);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](191, "1 Diente Obturado");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](195, "ion-col", 31)(196, "ion-button", 46);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](197, "1 Diente Obturado");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](192, "ion-col", 31)(193, "ion-button", 48);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](194, "2 Ausente");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](198, "ion-col", 31)(199, "ion-button", 47);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](200, "2 Ausente");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](195, "ion-col", 31)(196, "ion-button", 49);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](197, "3 Fractura");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](201, "ion-col", 31)(202, "ion-button", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](203, "3 Fractura");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](198, "ion-col", 31)(199, "ion-button", 50);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](200, "4 Resina");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](204, "ion-col", 31)(205, "ion-button", 49);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](206, "4 Resina");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](201, "ion-col", 31)(202, "ion-button", 51);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](203, "5 Amalgama");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](207, "ion-col", 31)(208, "ion-button", 50);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](209, "5 Amalgama");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](204, "ion-col", 31)(205, "ion-button", 52);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](206, "6 Erosi\u00F3n");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](210, "ion-col", 31)(211, "ion-button", 51);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](212, "6 Erosi\u00F3n");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](207, "ion-col", 31)(208, "ion-button", 53);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](209, "7 Obturaci\u00F3n");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](213, "ion-col", 31)(214, "ion-button", 52);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](215, "7 Obturaci\u00F3n");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](210, "ion-row")(211, "ion-col", 31)(212, "ion-button", 54);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](213, "8 Sellante");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](216, "ion-row")(217, "ion-col", 31)(218, "ion-button", 53);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](219, "8 Sellante");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](214, "ion-col", 31)(215, "ion-button", 46);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](216, "9 Enfermedad Periodontal");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](220, "ion-col", 31)(221, "ion-button", 45);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](222, "9 Enfermedad Periodontal");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](217, "ion-col", 31)(218, "ion-button", 47);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](219, "10 Mal posici\u00F3n dentaria");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](223, "ion-col", 31)(224, "ion-button", 46);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](225, "10 Mal posici\u00F3n dentaria");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](220, "ion-col", 31)(221, "ion-button", 48);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](222, "11 Exodoncia");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](226, "ion-col", 31)(227, "ion-button", 47);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](228, "11 Exodoncia");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](223, "ion-col", 31)(224, "ion-button", 49);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](225, "12 Corona");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](229, "ion-col", 31)(230, "ion-button", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](231, "12 Corona");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](226, "ion-col", 31)(227, "ion-button", 50);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](228, "13 Pr\u00F3tesis");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](232, "ion-col", 31)(233, "ion-button", 49);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](234, "13 Pr\u00F3tesis");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](229, "ion-col", 31)(230, "ion-button", 51);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](231, "14 Mancha Blanca");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](235, "ion-col", 31)(236, "ion-button", 50);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](237, "14 Mancha Blanca");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](232, "ion-col", 31)(233, "ion-button", 52);
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](234, "15 Otro");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](238, "ion-col", 31)(239, "ion-button", 51);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](240, "15 Otro");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()()();
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](179);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](146);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("fixed", true);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](39);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("fill", ctx.colors["section1"]);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("fill", ctx.colors["section2"]);
@@ -445,8 +458,8 @@ _Menu1Component.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__[
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("fill", ctx.colors["center"]);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_7__.ReactiveFormsModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonicModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonAccordion, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonAccordionGroup, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonButtons, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonCard, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonCardContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonCol, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonDatetime, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonGrid, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonIcon, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonItem, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonLabel, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonList, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonMenu, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonMenuButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonRow, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonSearchbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonThumbnail, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonToolbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.SelectValueAccessor, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.TextValueAccessor],
-  styles: ["@charset \"UTF-8\";\n.outlined-label[_ngcontent-%COMP%] {\n  display: inline-block;\n  padding: 2px 6px;\n  border: 2px solid var(--ion-color-primary);\n  border-radius: 4px;\n  font-weight: bold;\n  color: var(--ion-color-primary);\n  background-color: var(--ion-background-color);\n  transition: all 0.3s ease;\n}\n\nion-item.ion-focused[_ngcontent-%COMP%]   .outlined-label[_ngcontent-%COMP%] {\n  border-color: var(--ion-color-primary-shade);\n  color: var(--ion-color-primary-shade);\n}\n\n\n\n.custom-banner[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: flex-end;\n  margin-bottom: 20px;\n}\n\n.accordion-content[_ngcontent-%COMP%] {\n  padding: 15px;\n  background-color: #f2f2f2;\n  border-radius: 5px;\n}\n\n.logo[_ngcontent-%COMP%] {\n  height: 40px;\n  margin-right: 20px;\n}\n\n.search-bar[_ngcontent-%COMP%] {\n  --padding-start: 10px;\n  --padding-end: 10px;\n  --background: #fff;\n  --border-radius: 20px;\n  width: 60%;\n  max-width: 600px;\n  margin-right: 20px;\n}\n\n.clinic-logo[_ngcontent-%COMP%] {\n  height: 40px;\n}\n\nion-toolbar[_ngcontent-%COMP%] {\n  --background: #007bff; \n\n}\n\nion-buttons[_ngcontent-%COMP%]   ion-button[_ngcontent-%COMP%] {\n  color: white; \n\n}\n\nion-button[_ngcontent-%COMP%]   ion-icon[_ngcontent-%COMP%] {\n  margin-right: 5px;\n}\n\n.date-card[_ngcontent-%COMP%] {\n  background-color: #f9f9f9;\n  text-align: center;\n  border-radius: 5px;\n}\n\n.date-info[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.appointments-card[_ngcontent-%COMP%] {\n  background-color: white;\n}\n\n.search-bar[_ngcontent-%COMP%] {\n  --background: #f1f1f1;\n  --border-radius: 20px;\n  padding: 10px;\n}\n\nion-badge[_ngcontent-%COMP%] {\n  font-size: 14px;\n  padding: 6px;\n  border-radius: 10px;\n}\n\n.calendar[_ngcontent-%COMP%] {\n  background-image: url(\"/dentalRegisIonic/src/assets/calendar.svg\");\n}\n\nion-toolbar[_ngcontent-%COMP%]   ion-slides[_ngcontent-%COMP%] {\n  display: none; \n\n}\n\n@media (max-width: 768px) { \n\n  ion-toolbar[_ngcontent-%COMP%]   ion-slides[_ngcontent-%COMP%] {\n    display: block;\n  }\n  ion-toolbar[_ngcontent-%COMP%]   ion-buttons[_ngcontent-%COMP%] {\n    display: none; \n\n  }\n}\n.separador[_ngcontent-%COMP%] {\n  width: 1px;\n  height: 30px;\n  background-color: #ccc;\n  margin: 0 10px;\n}\n\n@media (max-width: 768px) {\n  \n\n  ion-buttons[_ngcontent-%COMP%] {\n    display: block;\n  }\n  ion-button[_ngcontent-%COMP%] {\n    width: 100%; \n\n    margin-bottom: 10px;\n  }\n  .separador[_ngcontent-%COMP%] {\n    display: none; \n\n  }\n}\n.mobile-toolbar[_ngcontent-%COMP%] {\n  display: none;\n}\n\n.desktop-toolbar[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n\n\n@media (max-width: 768px) {\n  .mobile-toolbar[_ngcontent-%COMP%] {\n    display: block;\n  }\n  .desktop-toolbar[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .separador[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbWVudTEvbWVudTEuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FBQWhCO0VBQ0kscUJBQUE7RUFDQSxnQkFBQTtFQUNBLDBDQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLCtCQUFBO0VBQ0EsNkNBQUE7RUFDQSx5QkFBQTtBQUVKOztBQUNFO0VBQ0UsNENBQUE7RUFDQSxxQ0FBQTtBQUVKOztBQUNFLDJCQUFBO0FBQ0Y7RUFDRSxhQUFBO0VBQ0EseUJBQUE7RUFDQSxtQkFBQTtBQUVGOztBQUNBO0VBQ0UsYUFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7QUFFRjs7QUFDQTtFQUNFLFlBQUE7RUFDQSxrQkFBQTtBQUVGOztBQUNBO0VBQ0UscUJBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxVQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtBQUVGOztBQUNBO0VBQ0UsWUFBQTtBQUVGOztBQUNBO0VBQ0UscUJBQUEsRUFBQSxzQ0FBQTtBQUVGOztBQUNBO0VBQ0UsWUFBQSxFQUFBLHFDQUFBO0FBRUY7O0FBQ0E7RUFDRSxpQkFBQTtBQUVGOztBQUNBO0VBQ0UseUJBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FBRUY7O0FBQ0E7RUFDRSxrQkFBQTtBQUVGOztBQUNBO0VBQ0UsdUJBQUE7QUFFRjs7QUFDQTtFQUNFLHFCQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFBO0FBRUY7O0FBQ0E7RUFDRSxlQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0FBRUY7O0FBRUE7RUFDRSxrRUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQSxFQUFBLHVDQUFBO0FBQ0Y7O0FBRUEsNEJBQUEsaURBQUE7RUFDRTtJQUNFLGNBQUE7RUFDRjtFQUVBO0lBQ0UsYUFBQSxFQUFBLDJDQUFBO0VBQUY7QUFDRjtBQUdFO0VBQ0UsVUFBQTtFQUNBLFlBQUE7RUFDQSxzQkFBQTtFQUNBLGNBQUE7QUFESjs7QUFJRTtFQUNFLGdEQUFBO0VBQ0E7SUFDRSxjQUFBO0VBREo7RUFJRTtJQUNFLFdBQUEsRUFBQSxvQ0FBQTtJQUNBLG1CQUFBO0VBRko7RUFLRTtJQUNFLGFBQUEsRUFBQSxrREFBQTtFQUhKO0FBQ0Y7QUFNRTtFQUNFLGFBQUE7QUFKSjs7QUFPRTtFQUNFLGFBQUE7QUFKSjs7QUFPRSx3Q0FBQTtBQUNBO0VBQ0U7SUFDRSxjQUFBO0VBSko7RUFPRTtJQUNFLGFBQUE7RUFMSjtFQVFFO0lBQ0UsYUFBQTtFQU5KO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIub3V0bGluZWQtbGFiZWwge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgcGFkZGluZzogMnB4IDZweDtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLWlvbi1jb2xvci1wcmltYXJ5KTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgY29sb3I6IHZhcigtLWlvbi1jb2xvci1wcmltYXJ5KTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWlvbi1iYWNrZ3JvdW5kLWNvbG9yKTtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2U7XHJcbiAgfVxyXG4gIFxyXG4gIGlvbi1pdGVtLmlvbi1mb2N1c2VkIC5vdXRsaW5lZC1sYWJlbCB7XHJcbiAgICBib3JkZXItY29sb3I6IHZhcigtLWlvbi1jb2xvci1wcmltYXJ5LXNoYWRlKTtcclxuICAgIGNvbG9yOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeS1zaGFkZSk7XHJcbiAgfVxyXG4gIFxyXG4gIC8qIEVzdGlsb3MgcGVyc29uYWxpemFkb3MgKi9cclxuLmN1c3RvbS1iYW5uZXIge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDtcclxuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcblxyXG4uYWNjb3JkaW9uLWNvbnRlbnQge1xyXG4gIHBhZGRpbmc6IDE1cHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YyZjJmMjtcclxuICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5sb2dvIHtcclxuICBoZWlnaHQ6IDQwcHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xyXG59XHJcblxyXG4uc2VhcmNoLWJhciB7XHJcbiAgLS1wYWRkaW5nLXN0YXJ0OiAxMHB4O1xyXG4gIC0tcGFkZGluZy1lbmQ6IDEwcHg7XHJcbiAgLS1iYWNrZ3JvdW5kOiAjZmZmO1xyXG4gIC0tYm9yZGVyLXJhZGl1czogMjBweDtcclxuICB3aWR0aDogNjAlO1xyXG4gIG1heC13aWR0aDogNjAwcHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xyXG59XHJcblxyXG4uY2xpbmljLWxvZ28ge1xyXG4gIGhlaWdodDogNDBweDtcclxufVxyXG5cclxuaW9uLXRvb2xiYXIge1xyXG4gIC0tYmFja2dyb3VuZDogIzAwN2JmZjsgLyogQmx1ZSBiYWNrZ3JvdW5kIGZvciBib3RoIHRvb2xiYXJzICovXHJcbn1cclxuXHJcbmlvbi1idXR0b25zIGlvbi1idXR0b24ge1xyXG4gIGNvbG9yOiB3aGl0ZTsgLyogTWFrZSBidXR0b24gdGV4dCBhbmQgaWNvbnMgd2hpdGUgKi9cclxufVxyXG5cclxuaW9uLWJ1dHRvbiBpb24taWNvbiB7XHJcbiAgbWFyZ2luLXJpZ2h0OiA1cHg7XHJcbn1cclxuXHJcbi5kYXRlLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmOWY5Zjk7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmRhdGUtaW5mbyB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4uYXBwb2ludG1lbnRzLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG4uc2VhcmNoLWJhciB7XHJcbiAgLS1iYWNrZ3JvdW5kOiAjZjFmMWYxO1xyXG4gIC0tYm9yZGVyLXJhZGl1czogMjBweDtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG59XHJcblxyXG5pb24tYmFkZ2Uge1xyXG4gIGZvbnQtc2l6ZTogMTRweDtcclxuICBwYWRkaW5nOiA2cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcclxufVxyXG5cclxuXHJcbi5jYWxlbmRhciB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvZGVudGFsUmVnaXNJb25pYy9zcmMvYXNzZXRzL2NhbGVuZGFyLnN2ZycpO1xyXG59XHJcblxyXG5pb24tdG9vbGJhciBpb24tc2xpZGVzIHtcclxuICBkaXNwbGF5OiBub25lOyAvKiBObyBtb3N0cmFyIGVsIGNhcnJ1c2VsIHBvciBkZWZlY3RvICovXHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkgeyAvKiBBcGxpY2FyIGVsIGNhcnJ1c2VsIGVuIGRpc3Bvc2l0aXZvcyBwZXF1ZcODwrFvcyAqL1xyXG4gIGlvbi10b29sYmFyIGlvbi1zbGlkZXMge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgfVxyXG4gIFxyXG4gIGlvbi10b29sYmFyIGlvbi1idXR0b25zIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7IC8qIE9jdWx0YXIgbG9zIGJvdG9uZXMgZnVlcmEgZGVsIGNhcnJ1c2VsICovXHJcbiAgfVxyXG59XHJcblxyXG4gIC5zZXBhcmFkb3Ige1xyXG4gICAgd2lkdGg6IDFweDtcclxuICAgIGhlaWdodDogMzBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNjY2M7XHJcbiAgICBtYXJnaW46IDAgMTBweDtcclxuICB9XHJcblxyXG4gIEBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgLyogQWp1c3RlIHBhcmEgcGFudGFsbGFzIHBlcXVlw4PCsWFzIGNvbW8gbcODwrN2aWxlcyAqL1xyXG4gICAgaW9uLWJ1dHRvbnMge1xyXG4gICAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIH1cclxuXHJcbiAgICBpb24tYnV0dG9uIHtcclxuICAgICAgd2lkdGg6IDEwMCU7IC8qIENhZGEgYm90w4PCs24gb2N1cGFyw4PCoSB0b2RhIGxhIGZpbGEgKi9cclxuICAgICAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxuICAgIH1cclxuXHJcbiAgICAuc2VwYXJhZG9yIHtcclxuICAgICAgZGlzcGxheTogbm9uZTsgLyogT2N1bHRhciBsb3Mgc2VwYXJhZG9yZXMgZW4gcGFudGFsbGFzIHBlcXVlw4PCsWFzICovXHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICAubW9iaWxlLXRvb2xiYXIge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxuICB9XHJcbiAgXHJcbiAgLmRlc2t0b3AtdG9vbGJhciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICBcclxuICAvKiBNZWRpYSBxdWVyeSBwYXJhIHBhbnRhbGxhcyBwZXF1ZcODwrFhcyAqL1xyXG4gIEBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgLm1vYmlsZS10b29sYmFyIHtcclxuICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB9XHJcbiAgXHJcbiAgICAuZGVza3RvcC10b29sYmFyIHtcclxuICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxuICBcclxuICAgIC5zZXBhcmFkb3Ige1xyXG4gICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG4gIH1cclxuICAiXSwic291cmNlUm9vdCI6IiJ9 */"]
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_7__.ReactiveFormsModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonicModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonAccordion, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonAccordionGroup, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonButtons, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonCard, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonCol, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonDatetime, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonGrid, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonIcon, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonItem, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonLabel, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonList, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonMenu, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonMenuButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonRow, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonSearchbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonToolbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.SelectValueAccessor, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.TextValueAccessor],
+  styles: ["@charset \"UTF-8\";\n.outlined-label[_ngcontent-%COMP%] {\n  display: inline-block;\n  padding: 2px 6px;\n  border: 2px solid var(--ion-color-primary);\n  border-radius: 4px;\n  font-weight: bold;\n  color: var(--ion-color-primary);\n  background-color: var(--ion-background-color);\n  transition: all 0.3s ease;\n}\n\nion-item.ion-focused[_ngcontent-%COMP%]   .outlined-label[_ngcontent-%COMP%] {\n  border-color: var(--ion-color-primary-shade);\n  color: var(--ion-color-primary-shade);\n}\n\n\n\n.custom-banner[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: flex-end;\n  margin-bottom: 20px;\n}\n\n.accordion-content[_ngcontent-%COMP%] {\n  padding: 15px;\n  background-color: #f2f2f2;\n  border-radius: 5px;\n}\n\n.logo[_ngcontent-%COMP%] {\n  height: 40px;\n  margin-right: 20px;\n}\n\n.search-bar[_ngcontent-%COMP%] {\n  --padding-start: 10px;\n  --padding-end: 10px;\n  --background: #fff;\n  --border-radius: 20px;\n  width: 60%;\n  max-width: 600px;\n  margin-right: 20px;\n}\n\n.clinic-logo[_ngcontent-%COMP%] {\n  height: 40px;\n}\n\nion-toolbar[_ngcontent-%COMP%] {\n  --background: #007bff; \n\n}\n\nion-buttons[_ngcontent-%COMP%]   ion-button[_ngcontent-%COMP%] {\n  color: white; \n\n}\n\nion-button[_ngcontent-%COMP%]   ion-icon[_ngcontent-%COMP%] {\n  margin-right: 5px;\n}\n\n.date-card[_ngcontent-%COMP%] {\n  background-color: #f9f9f9;\n  text-align: center;\n  border-radius: 5px;\n}\n\n.date-info[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.appointments-card[_ngcontent-%COMP%] {\n  background-color: white;\n}\n\n.search-bar[_ngcontent-%COMP%] {\n  --background: #f1f1f1;\n  --border-radius: 20px;\n  padding: 10px;\n}\n\nion-badge[_ngcontent-%COMP%] {\n  font-size: 14px;\n  padding: 6px;\n  border-radius: 10px;\n}\n\n.calendar[_ngcontent-%COMP%] {\n  background-image: url(\"/dentalRegisIonic/src/assets/calendar.svg\");\n}\n\nion-toolbar[_ngcontent-%COMP%]   ion-slides[_ngcontent-%COMP%] {\n  display: none; \n\n}\n\n@media (max-width: 768px) { \n\n  ion-toolbar[_ngcontent-%COMP%]   ion-slides[_ngcontent-%COMP%] {\n    display: block;\n  }\n  ion-toolbar[_ngcontent-%COMP%]   ion-buttons[_ngcontent-%COMP%] {\n    display: none; \n\n  }\n}\n.separador[_ngcontent-%COMP%] {\n  width: 1px;\n  height: 30px;\n  background-color: #ccc;\n  margin: 0 10px;\n}\n\n@media (max-width: 768px) {\n  \n\n  ion-buttons[_ngcontent-%COMP%] {\n    display: block;\n  }\n  ion-button[_ngcontent-%COMP%] {\n    width: 100%; \n\n    margin-bottom: 10px;\n  }\n  .separador[_ngcontent-%COMP%] {\n    display: none; \n\n  }\n}\n.mobile-toolbar[_ngcontent-%COMP%] {\n  display: none;\n}\n\n.desktop-toolbar[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n\n\n@media (max-width: 768px) {\n  .mobile-toolbar[_ngcontent-%COMP%] {\n    display: block;\n  }\n  .desktop-toolbar[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .separador[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\nion-grid[_ngcontent-%COMP%] {\n  --ion-grid-width: 50%;\n  --ion-grid-width-xs: 50%;\n  --ion-grid-width-sm: 288px;\n  --ion-grid-width-md: 384px;\n  --ion-grid-width-lg: 480px;\n  --ion-grid-width-xl: 570px;\n}\n\nion-col[_ngcontent-%COMP%] {\n  background-color: #535353;\n  border: solid 1px #ffffff;\n  color: #fff;\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbWVudTEvbWVudTEuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FBQWhCO0VBQ0kscUJBQUE7RUFDQSxnQkFBQTtFQUNBLDBDQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLCtCQUFBO0VBQ0EsNkNBQUE7RUFDQSx5QkFBQTtBQUVKOztBQUNFO0VBQ0UsNENBQUE7RUFDQSxxQ0FBQTtBQUVKOztBQUNFLDJCQUFBO0FBQ0Y7RUFDRSxhQUFBO0VBQ0EseUJBQUE7RUFDQSxtQkFBQTtBQUVGOztBQUNBO0VBQ0UsYUFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7QUFFRjs7QUFDQTtFQUNFLFlBQUE7RUFDQSxrQkFBQTtBQUVGOztBQUNBO0VBQ0UscUJBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxVQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtBQUVGOztBQUNBO0VBQ0UsWUFBQTtBQUVGOztBQUNBO0VBQ0UscUJBQUEsRUFBQSxzQ0FBQTtBQUVGOztBQUNBO0VBQ0UsWUFBQSxFQUFBLHFDQUFBO0FBRUY7O0FBQ0E7RUFDRSxpQkFBQTtBQUVGOztBQUNBO0VBQ0UseUJBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FBRUY7O0FBQ0E7RUFDRSxrQkFBQTtBQUVGOztBQUNBO0VBQ0UsdUJBQUE7QUFFRjs7QUFDQTtFQUNFLHFCQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFBO0FBRUY7O0FBQ0E7RUFDRSxlQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0FBRUY7O0FBRUE7RUFDRSxrRUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQSxFQUFBLHVDQUFBO0FBQ0Y7O0FBRUEsNEJBQUEsaURBQUE7RUFDRTtJQUNFLGNBQUE7RUFDRjtFQUVBO0lBQ0UsYUFBQSxFQUFBLDJDQUFBO0VBQUY7QUFDRjtBQUdFO0VBQ0UsVUFBQTtFQUNBLFlBQUE7RUFDQSxzQkFBQTtFQUNBLGNBQUE7QUFESjs7QUFJRTtFQUNFLGdEQUFBO0VBQ0E7SUFDRSxjQUFBO0VBREo7RUFJRTtJQUNFLFdBQUEsRUFBQSxvQ0FBQTtJQUNBLG1CQUFBO0VBRko7RUFLRTtJQUNFLGFBQUEsRUFBQSxrREFBQTtFQUhKO0FBQ0Y7QUFNRTtFQUNFLGFBQUE7QUFKSjs7QUFPRTtFQUNFLGFBQUE7QUFKSjs7QUFPRSx3Q0FBQTtBQUNBO0VBQ0U7SUFDRSxjQUFBO0VBSko7RUFPRTtJQUNFLGFBQUE7RUFMSjtFQVFFO0lBQ0UsYUFBQTtFQU5KO0FBQ0Y7QUFVRTtFQUNFLHFCQUFBO0VBRUEsd0JBQUE7RUFDQSwwQkFBQTtFQUNBLDBCQUFBO0VBQ0EsMEJBQUE7RUFDQSwwQkFBQTtBQVRKOztBQVlFO0VBQ0UseUJBQUE7RUFDQSx5QkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtBQVRKIiwic291cmNlc0NvbnRlbnQiOlsiLm91dGxpbmVkLWxhYmVsIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIHBhZGRpbmc6IDJweCA2cHg7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCB2YXIoLS1pb24tY29sb3ItcHJpbWFyeSk7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGNvbG9yOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeSk7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1pb24tYmFja2dyb3VuZC1jb2xvcik7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBlYXNlO1xyXG4gIH1cclxuICBcclxuICBpb24taXRlbS5pb24tZm9jdXNlZCAub3V0bGluZWQtbGFiZWwge1xyXG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeS1zaGFkZSk7XHJcbiAgICBjb2xvcjogdmFyKC0taW9uLWNvbG9yLXByaW1hcnktc2hhZGUpO1xyXG4gIH1cclxuICBcclxuICAvKiBFc3RpbG9zIHBlcnNvbmFsaXphZG9zICovXHJcbi5jdXN0b20tYmFubmVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogZmxleC1lbmQ7XHJcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG5cclxuLmFjY29yZGlvbi1jb250ZW50IHtcclxuICBwYWRkaW5nOiAxNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmMmYyZjI7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4ubG9nbyB7XHJcbiAgaGVpZ2h0OiA0MHB4O1xyXG4gIG1hcmdpbi1yaWdodDogMjBweDtcclxufVxyXG5cclxuLnNlYXJjaC1iYXIge1xyXG4gIC0tcGFkZGluZy1zdGFydDogMTBweDtcclxuICAtLXBhZGRpbmctZW5kOiAxMHB4O1xyXG4gIC0tYmFja2dyb3VuZDogI2ZmZjtcclxuICAtLWJvcmRlci1yYWRpdXM6IDIwcHg7XHJcbiAgd2lkdGg6IDYwJTtcclxuICBtYXgtd2lkdGg6IDYwMHB4O1xyXG4gIG1hcmdpbi1yaWdodDogMjBweDtcclxufVxyXG5cclxuLmNsaW5pYy1sb2dvIHtcclxuICBoZWlnaHQ6IDQwcHg7XHJcbn1cclxuXHJcbmlvbi10b29sYmFyIHtcclxuICAtLWJhY2tncm91bmQ6ICMwMDdiZmY7IC8qIEJsdWUgYmFja2dyb3VuZCBmb3IgYm90aCB0b29sYmFycyAqL1xyXG59XHJcblxyXG5pb24tYnV0dG9ucyBpb24tYnV0dG9uIHtcclxuICBjb2xvcjogd2hpdGU7IC8qIE1ha2UgYnV0dG9uIHRleHQgYW5kIGljb25zIHdoaXRlICovXHJcbn1cclxuXHJcbmlvbi1idXR0b24gaW9uLWljb24ge1xyXG4gIG1hcmdpbi1yaWdodDogNXB4O1xyXG59XHJcblxyXG4uZGF0ZS1jYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjlmOWY5O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5kYXRlLWluZm8ge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLmFwcG9pbnRtZW50cy1jYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnNlYXJjaC1iYXIge1xyXG4gIC0tYmFja2dyb3VuZDogI2YxZjFmMTtcclxuICAtLWJvcmRlci1yYWRpdXM6IDIwcHg7XHJcbiAgcGFkZGluZzogMTBweDtcclxufVxyXG5cclxuaW9uLWJhZGdlIHtcclxuICBmb250LXNpemU6IDE0cHg7XHJcbiAgcGFkZGluZzogNnB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbn1cclxuXHJcblxyXG4uY2FsZW5kYXIge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2RlbnRhbFJlZ2lzSW9uaWMvc3JjL2Fzc2V0cy9jYWxlbmRhci5zdmcnKTtcclxufVxyXG5cclxuaW9uLXRvb2xiYXIgaW9uLXNsaWRlcyB7XHJcbiAgZGlzcGxheTogbm9uZTsgLyogTm8gbW9zdHJhciBlbCBjYXJydXNlbCBwb3IgZGVmZWN0byAqL1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHsgLyogQXBsaWNhciBlbCBjYXJydXNlbCBlbiBkaXNwb3NpdGl2b3MgcGVxdWXDg8Kxb3MgKi9cclxuICBpb24tdG9vbGJhciBpb24tc2xpZGVzIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gIH1cclxuICBcclxuICBpb24tdG9vbGJhciBpb24tYnV0dG9ucyB7XHJcbiAgICBkaXNwbGF5OiBub25lOyAvKiBPY3VsdGFyIGxvcyBib3RvbmVzIGZ1ZXJhIGRlbCBjYXJydXNlbCAqL1xyXG4gIH1cclxufVxyXG5cclxuICAuc2VwYXJhZG9yIHtcclxuICAgIHdpZHRoOiAxcHg7XHJcbiAgICBoZWlnaHQ6IDMwcHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjY2NjO1xyXG4gICAgbWFyZ2luOiAwIDEwcHg7XHJcbiAgfVxyXG5cclxuICBAbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHtcclxuICAgIC8qIEFqdXN0ZSBwYXJhIHBhbnRhbGxhcyBwZXF1ZcODwrFhcyBjb21vIG3Dg8KzdmlsZXMgKi9cclxuICAgIGlvbi1idXR0b25zIHtcclxuICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB9XHJcblxyXG4gICAgaW9uLWJ1dHRvbiB7XHJcbiAgICAgIHdpZHRoOiAxMDAlOyAvKiBDYWRhIGJvdMODwrNuIG9jdXBhcsODwqEgdG9kYSBsYSBmaWxhICovXHJcbiAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbiAgICB9XHJcblxyXG4gICAgLnNlcGFyYWRvciB7XHJcbiAgICAgIGRpc3BsYXk6IG5vbmU7IC8qIE9jdWx0YXIgbG9zIHNlcGFyYWRvcmVzIGVuIHBhbnRhbGxhcyBwZXF1ZcODwrFhcyAqL1xyXG4gICAgfVxyXG4gIH1cclxuXHJcbiAgLm1vYmlsZS10b29sYmFyIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIFxyXG4gIC5kZXNrdG9wLXRvb2xiYXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICB9XHJcbiAgXHJcbiAgLyogTWVkaWEgcXVlcnkgcGFyYSBwYW50YWxsYXMgcGVxdWXDg8KxYXMgKi9cclxuICBAbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHtcclxuICAgIC5tb2JpbGUtdG9vbGJhciB7XHJcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgfVxyXG4gIFxyXG4gICAgLmRlc2t0b3AtdG9vbGJhciB7XHJcbiAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICB9XHJcbiAgXHJcbiAgICAuc2VwYXJhZG9yIHtcclxuICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxuICB9XHJcbiAgXHJcblxyXG4gIGlvbi1ncmlkIHtcclxuICAgIC0taW9uLWdyaWQtd2lkdGg6IDUwJTtcclxuICBcclxuICAgIC0taW9uLWdyaWQtd2lkdGgteHM6IDUwJTtcclxuICAgIC0taW9uLWdyaWQtd2lkdGgtc206IDI4OHB4O1xyXG4gICAgLS1pb24tZ3JpZC13aWR0aC1tZDogMzg0cHg7XHJcbiAgICAtLWlvbi1ncmlkLXdpZHRoLWxnOiA0ODBweDtcclxuICAgIC0taW9uLWdyaWQtd2lkdGgteGw6IDU3MHB4O1xyXG4gIH1cclxuICBcclxuICBpb24tY29sIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM1MzUzNTM7XHJcbiAgICBib3JkZXI6IHNvbGlkIDFweCAjZmZmZmZmO1xyXG4gICAgY29sb3I6ICNmZmY7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfSJdLCJzb3VyY2VSb290IjoiIn0= */"]
 });
 
 /***/ }),
